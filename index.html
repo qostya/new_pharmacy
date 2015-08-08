@@ -35,7 +35,7 @@
             </div>
 
             <div class="col-md-3 col-sm-4 col-xs-12">
-                <div class="b-header-info">
+                <div class="b-header-info b-header-info_phone_icon">
                     <span class="b-header-info_title">Наши телефоны</span><br>
                     <a href="#" class="b-header-info_phone">+7 (987) 654-32-10</a><br>
                     <a href="#" class="b-header-info_phone">+7 (012) 345-67-89</a>
@@ -43,7 +43,7 @@
             </div>
 
             <div class="col-md-3 col-sm-4 col-xs-12">
-                <div class="b-header-info">
+                <div class="b-header-info b-header-info_time_icon">
                     <span class="b-header-info_title">Режим работы</span><br>
                     <div class="b-header-info_time">с 9:00 - 18:00</div>
                     <small class="b-header-info_time-small-text">без перерывов</small>
@@ -102,7 +102,22 @@
         <div class="container">
             <div class="b-search-wrap">
                 <div class="b-search-left">
+                    <div class="b-search-field">
+                        <form action="/" method="get">
+                            <div class="b-search_input">
+                                <input type="text" id="search" placeholder="Введите наименование товара" required/>
+                                <label class="b-search_icon" for="search">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </label>
+                                <button type="button" class="btn b-search_button">НАЙТИ</button>
+                            </div>
 
+                            <div class="b-search_in_stock">
+                                <input type="checkbox" id="in_stock" hidden />
+                                <label for="in_stock">показывать только имеющийся в наличии товар</label>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="b-search-right">
@@ -121,7 +136,7 @@
                             <table class="b-cart-table" border="0">
                                 <tr>
                                     <td class="b-cart-table_title">
-                                        <div>Альфаган sdasd sad as ads</div>
+                                        <div>Альфаган</div>
                                     </td>
                                     <td class="b-cart-table_count">
                                         <div>1</div>
