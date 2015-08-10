@@ -720,6 +720,7 @@ body {
     width: 100%;
     background: #fff;
     border: 1px solid #D4D4D4;
+    margin-bottom: 10px;
 }
 
 .b-products-item_image img {
@@ -733,6 +734,7 @@ body {
 
 .b-products-item_description {
     padding: 0 3px 0 7px;
+    margin-bottom: 3px;
 }
 
 .b-products-item_description h6 {
@@ -895,13 +897,19 @@ body {
     transition: all 0.2s;
 }
 
-
 .b-products-items_in_cart i:hover:after {
     width: 36px;
     height: 36px;
     background: #E9485F;
 }
 
+.b-products_line {
+    width: 95%;
+    clear: both;
+    height: 3px;
+    margin: 10px auto;
+    background: url(../images/dotted-line.png) repeat-x;
+}
 
 
 
