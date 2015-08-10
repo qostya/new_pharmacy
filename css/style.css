@@ -402,6 +402,15 @@ body {
     font-weight: bold;
 }
 
+.b-cart-table_count input {
+    width: 34px;
+    height: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: transparent;
+}
+
 .b-cart-table_price {
     width: 61px;
     font-weight: bold;
