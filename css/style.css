@@ -719,10 +719,14 @@ body {
 }
 
 .b-products-item {
-
+    width: 100%;
+    background: #fff;
+    border: 1px solid #D4D4D4;
 }
 
-
+.b-products-item_image img {
+    width: 100%;
+}
 
 
 
