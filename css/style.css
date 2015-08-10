@@ -505,7 +505,7 @@ body {
     background: #D6D6D6;
 }
 
-.b-search_button:hover, .b-search_button:active, .b-search_input input:focus ~ .b-search_button {
+.b-search_button:hover, .b-search_button:active, .b-search_button:focus, .b-search_input input:focus ~ .b-search_button {
     background: #e9485f;
     color: #fff;
     outline: none;
