@@ -20,14 +20,16 @@ $(function () {
         var sett;
         $('.b-categories .nav > li')
             .hover(function (ev) {
-                if (!$(this).hasClass('b-categories-dropdown__acive')) {
-                    $(this).find('.b-categories-dropdown').addClass('b-categories-dropdown__acive');
-                    clearTimeout(sett);
+                if (!$(this).hasClass('b-categories-dropdown__active')) {
+                    $(this).siblings('li').find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
+                    $(this).find('.b-categories-dropdown').addClass('b-categories-dropdown__active');
+                    console.log($(this).siblings('li'));
                 }
             }, function (ev) {
                 var $this = $(this),
                     hideEl = function () {
-                        $this.find('.b-categories-dropdown').removeClass('b-categories-dropdown__acive');
+                        $this.find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
+                        $this.find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
                         clearTimeout(sett);
                     };
                 sett = setTimeout(hideEl, 1000);

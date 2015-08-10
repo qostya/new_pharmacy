@@ -232,7 +232,7 @@ body {
 
 .b-menu-line_item {
     border-top: 3px solid #fff;
-    margin-left: 3px;
+    margin-left: -2px;
 }
 
 .b-menu-line_item:hover {
@@ -684,7 +684,7 @@ body {
     border: 1px solid #B0B0B0;
 }
 
-.b-categories-dropdown__acive {
+.b-categories-dropdown__active {
     display: block;
 }
 
