@@ -231,22 +231,21 @@ body {
 }
 
 .b-menu-line_item {
-    border-top: 3px solid #fff;
     margin-left: -2px;
 }
 
-.b-menu-line_item:hover {
-    background: #5FB93C;
-    border-top-color: #000;
-}
-
 .b-menu-line_item:hover a {
+    background: #5FB93C!important;
+
+    border-top-color: #000;
     color: #fff!important;
 }
 
 .b-menu-line_item a {
     text-transform: uppercase;
+    border-top: 3px solid #fff;
     font-size: 13px;
+    margin-right: 2px;
     color: #000!important;
 }
 
@@ -286,27 +285,9 @@ body {
 }
 
 .b-cart_top {
-    height: 72px;
-    background: #363636;
-    -webkit-transition: height 0.2s, padding 0.2s;
-    -moz-transition: height 0.2s, padding 0.2s;
-    -ms-transition: height 0.2s, padding 0.2s;
-    -o-transition: height 0.2s, padding 0.2s;
-    transition: height 0.2s, padding 0.2s;
-}
-
-.b-cart__active .b-cart_top {
-    padding-top: 2px;
     height: 86px;
-}
-
-.b-cart__active .b-cart_icon span {
-    top: 15px;
-    -webkit-transition: top 0.2s;
-    -moz-transition: top 0.2s;
-    -ms-transition: top 0.2s;
-    -o-transition: top 0.2s;
-    transition: top 0.2s;
+    padding-top: 2px;
+    background: #363636;
 }
 
 .b-cart_icon {
@@ -336,7 +317,7 @@ body {
     font-weight: 500;
     color: #fff;
     position: absolute;
-    top: 13px;
+    top: 15px;
     left: 40px;
     -webkit-box-shadow: 0 0 0 3px #363636;
     -moz-box-shadow: 0 0 0 3px #363636;
