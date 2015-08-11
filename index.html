@@ -266,6 +266,11 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="b-calendar">
+                        <div class="js-calendar"></div>
+                    </div>
+
                 </div>
 
                 <div class="b-products col-sm-12">
@@ -475,9 +480,42 @@
 
 
 
+<script type="text/template" id="clndr-template">
+    <div class="b-calendar-wrap">
+        <div class="b-calendar_clndr-controls">
+            <div class="clndr-previous-button"><i class="glyphicon glyphicon-menu-left"></i></div>
+            <div class="b-calendar_month"><%= month %>, <%= year %></div>
+            <div class="clndr-next-button"><i class="glyphicon glyphicon-menu-right"></i></div>
+        </div>
+        <div class="b-calendar_clndr-grid">
+            <div class="b-calendar_days-of-the-week">
+                <div class="b-calendar_days">
+                    <% _.each(days, function(day) { %>
+                    <div class="b-calendar_<%= day.classes %>"><%= day.day %></div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-calendar_event">
+        <div class="b-calendar_event_icon">
+            <i></i>
+        </div>
+        <div class="b-calendar_event_text">
+            В продажу поступило новое
+            эффективное средство от
+            простуды - <span class="text-green">“Hamsherlife”</span>
+        </div>
+    </div>
+</script>
+
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/moment/locale/ru.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="bower_components/clndr/src/clndr.js"></script>
 <script src="js/jquery.bxslider.min.js"></script>
 <script src="js/main.js"></script>
 </body>

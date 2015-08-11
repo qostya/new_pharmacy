@@ -25,8 +25,9 @@ $(function () {
         }
     });
 
-
-
+    $('.js-calendar').clndr({
+        template: $('#clndr-template').html()
+    });
 
 
     (function () {

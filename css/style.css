@@ -236,7 +236,6 @@ body {
 
 .b-menu-line_item:hover a {
     background: #5FB93C!important;
-
     border-top-color: #000;
     color: #fff!important;
 }
@@ -900,6 +899,111 @@ body {
     margin: 10px auto;
     background: url(../images/dotted-line.png) repeat-x;
 }
+
+
+.b-calendar {
+    text-align: center;
+}
+
+.b-calendar_day, .clndr-previous-button, .clndr-next-button {
+    float: left;
+    width: 14.25%;
+}
+
+.b-calendar_month {
+    width: 71.5%;
+    float: left;
+}
+
+.b-calendar_clndr-controls:after, .b-calendar_days:after {
+    content: ' ';
+    display: table;
+}
+
+.b-calendar-wrap {
+    background: #E9485F;
+    padding: 4px;
+}
+
+.b-calendar_month {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.b-calendar_days {
+    background: #fff;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.b-calendar_day {
+    line-height: 20px;
+    padding-top: 2px;
+}
+
+.b-calendar_day.adjacent-month {
+    color: #C5C5C5;
+}
+
+.b-calendar_day.today {
+    background-color: #E9485F;
+    color: #fff;
+}
+
+.b-calendar_clndr-controls {
+    line-height: 26px;
+    color: #fff;
+}
+
+.clndr-next-button, .clndr-previous-button {
+    font-size: 10px;
+}
+
+.clndr-next-button:hover, .clndr-previous-button:hover {
+    background: #D22B43;
+}
+
+.calendar-dow-1, .calendar-dow-3, .calendar-dow-5 {
+    background: #fafafa;
+}
+
+.b-calendar_event {
+    background: #fff;
+    padding: 10px 5px 15px;
+}
+
+.b-calendar_event_icon {
+    height: 45px;
+    text-align: center;
+    line-height: 55px;
+}
+
+.b-calendar_event_icon i {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url(../images/calendar-ok.png) no-repeat, #E9485F;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.b-calendar_event_text {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.text-green {
+    color: #1e9a21;
+}
+
+
+
+
+
+
+
 
 
 
