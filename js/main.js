@@ -29,6 +29,25 @@ $(function () {
         template: $('#clndr-template').html()
     });
 
+    $('.b-poll-results_item_line div').width(function () {
+        return $(this).siblings('span').text();
+    });
+
+    $('.b-poll_actions').click(function (ev) {
+        if (ev.target.tagName === 'A' || $('.b-poll_answer input:checked').length) {
+            if (ev.target.tagName === 'INPUT') {
+                // here must be Ajax for polling. next code need to add to callback
+            }
+
+            $('.b-poll').toggleClass('b-poll__results-open');
+            $('.b-poll-results_item_line div').width(function () {
+                return $(this).siblings('span').text();
+            });
+        }
+
+        return false;
+    });
+
 
     (function () {
         var sett;

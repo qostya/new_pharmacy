@@ -63,6 +63,16 @@
                             <strong>420</strong> руб
                         </div>
                     </div>
+                    <div class="css-circle-wrapper">
+                        <!-- Можно переиспользовать, удалив .b-header-favorites_hover-title. onclick для примера добавления в корзину -->
+                        <div class="css-circle-hover"></div>
+                        <div class="b-header-favorites_hover-title" onclick="javascript:void(0)">
+                            Добавить в корзину
+                        </div>
+                    </div>
+
+                    <div class="b-favorive_heart"><i class="glyphicon glyphicon-heart-empty"></i></div>
+
                 </div>
             </div>
         </div>
@@ -116,7 +126,7 @@
                             </div>
 
                             <div class="b-search_in_stock">
-                                <input type="checkbox" id="in_stock" hidden />
+                                <input type="checkbox" id="in_stock" />
                                 <label for="in_stock">показывать только имеющийся в наличии товар</label>
                             </div>
                         </form>
@@ -216,7 +226,7 @@
         <div class="container">
             <div class="row">
                 <div class="b-categories col-sm-12">
-                    <h3 class="b-content_title">Каталог</h3>
+                    <h3 class="b-content_title b-content_title__catalog">Каталог</h3>
                     <div class="navbar navbar-default">
                         <div class="container-fluid">
                             <div class="navbar-header">
@@ -273,10 +283,10 @@
 
 
                     <div class="b-poll">
-                        <h3 class="b-content_title">Опрос</h3>
+                        <h3 class="b-content_title b-content_title__poll">Опрос</h3>
                         <div class="b-poll-content">
                             <p>Устраивают ли вас цены на лекарства в вашем городе?</p>
-                            <form action="/">
+                            <form action="/" class="b-poll-choices">
                                 <ul>
                                     <li class="b-poll_answer"><label><input type="radio" name="poll"/> Да</label></li>
                                     <li class="b-poll_answer"><label><input type="radio" name="poll"/> Нет</label></li>
@@ -284,17 +294,51 @@
                                     <li class="b-poll_answer"><label><input type="radio" name="poll"/> Не болею</label></li>
                                 </ul>
                             </form>
+
+                            <div class="b-poll-results">
+                                <ul>
+                                    <li class="b-poll-results_item">
+                                        <span>Да (5)</span>
+                                        <div class="b-poll-results_item_line">
+                                            <div style="width:33%;"></div>
+                                            <span>54%</span>
+                                        </div>
+                                    </li>
+                                    <li class="b-poll-results_item">
+                                        <span>Нет (5)</span>
+                                        <div class="b-poll-results_item_line">
+                                            <div style="width:33%;"></div>
+                                            <span>54%</span>
+                                        </div>
+                                    </li>
+                                    <li class="b-poll-results_item">
+                                        <span>Не покупаю лекарства (5)</span>
+                                        <div class="b-poll-results_item_line">
+                                            <div style="width:33%;"></div>
+                                            <span>54%</span>
+                                        </div>
+                                    </li>
+                                    <li class="b-poll-results_item">
+                                        <span>Не болею (5)</span>
+                                        <div class="b-poll-results_item_line">
+                                            <div style="width:33%;"></div>
+                                            <span>54%</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="b-poll_actions">
                             <input type="submit" value="ОТВЕТИТЬ" class="b-poll_submit"/>
                             <a href="" class="b-poll_show-results">РЕЗУЛЬТАТЫ</a>
+                            <a href="" class="b-poll_comeback">ВЕРНУТЬСЯ</a>
                         </div>
                     </div>
 
                 </div>
 
                 <div class="b-products col-sm-12">
-                    <h3 class="b-content_title">Товар дня</h3>
+                    <h3 class="b-content_title b-content_title__product">Товар дня</h3>
                     <div class="row">
                         <div class="col-md-15 col-sm-4 col-xs-12">
                             <div class="b-products-item">
