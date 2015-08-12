@@ -31,11 +31,11 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6">
                 <a href="#" class="logo logo-header">Новая аптека</a>
             </div>
 
-            <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-6 b-header-info_phone_wrapper">
                 <div class="b-header-info b-header-info_phone_icon">
                     <span class="b-header-info_title">Наши телефоны</span><br>
                     <a href="#" class="b-header-info_phone">+7 (987) 654-32-10</a><br>
@@ -43,7 +43,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-6 b-header-info_time_wrapper">
                 <div class="b-header-info b-header-info_time_icon">
                     <span class="b-header-info_title">Режим работы</span><br>
                     <div class="b-header-info_time">с 9:00 - 18:00</div>
@@ -51,7 +51,7 @@
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="b-header-favorite">
                     <div class="b-header-favorite_image">
                         <img src="images/70x90.png" alt="img"/>
@@ -83,6 +83,7 @@
         <div class="navbar navbar-default">
             <div class="container-fluid no_padding">
                 <div class="navbar-header">
+                    <span>Меню</span>
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".b-menu-line_collapse" aria-expanded="false">
                         <span class="sr-only">Навигация</span>
                         <span class="icon-bar"></span>
@@ -277,62 +278,67 @@
                         </div>
                     </div>
 
-                    <div class="b-calendar">
-                        <div class="js-calendar"></div>
-                    </div>
+                    <div class="row">
+                        <div class="b-calendar col-sm-6 col-md-12">
+                            <div class="js-calendar"></div>
+                        </div>
 
 
-                    <div class="b-poll">
-                        <h3 class="b-content_title b-content_title__poll">Опрос</h3>
-                        <div class="b-poll-content">
-                            <p>Устраивают ли вас цены на лекарства в вашем городе?</p>
-                            <form action="/" class="b-poll-choices">
-                                <ul>
-                                    <li class="b-poll_answer"><label><input type="radio" name="poll"/> Да</label></li>
-                                    <li class="b-poll_answer"><label><input type="radio" name="poll"/> Нет</label></li>
-                                    <li class="b-poll_answer"><label><input type="radio" name="poll"/> Не покупаю лекарства</label></li>
-                                    <li class="b-poll_answer"><label><input type="radio" name="poll"/> Не болею</label></li>
-                                </ul>
-                            </form>
+                        <div class="b-poll col-sm-6 col-md-12">
+                            <div class="b-poll-wrapper">
+                                <h3 class="b-content_title b-content_title__poll">Опрос</h3>
+                                <div class="b-poll-content">
+                                    <p>Устраивают ли вас цены на лекарства в вашем городе?</p>
+                                    <form action="/" class="b-poll-choices">
+                                        <ul>
+                                            <li class="b-poll_answer"><label><input type="radio" name="poll"/> Да</label></li>
+                                            <li class="b-poll_answer"><label><input type="radio" name="poll"/> Нет</label></li>
+                                            <li class="b-poll_answer"><label><input type="radio" name="poll"/> Не покупаю лекарства</label></li>
+                                            <li class="b-poll_answer"><label><input type="radio" name="poll"/> Не болею</label></li>
+                                        </ul>
+                                    </form>
 
-                            <div class="b-poll-results">
-                                <ul>
-                                    <li class="b-poll-results_item">
-                                        <span>Да (5)</span>
-                                        <div class="b-poll-results_item_line">
-                                            <div style="width:33%;"></div>
-                                            <span>54%</span>
-                                        </div>
-                                    </li>
-                                    <li class="b-poll-results_item">
-                                        <span>Нет (5)</span>
-                                        <div class="b-poll-results_item_line">
-                                            <div style="width:33%;"></div>
-                                            <span>54%</span>
-                                        </div>
-                                    </li>
-                                    <li class="b-poll-results_item">
-                                        <span>Не покупаю лекарства (5)</span>
-                                        <div class="b-poll-results_item_line">
-                                            <div style="width:33%;"></div>
-                                            <span>54%</span>
-                                        </div>
-                                    </li>
-                                    <li class="b-poll-results_item">
-                                        <span>Не болею (5)</span>
-                                        <div class="b-poll-results_item_line">
-                                            <div style="width:33%;"></div>
-                                            <span>54%</span>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    <div class="b-poll-results">
+                                        <ul>
+                                            <li class="b-poll-results_item">
+                                                <span>Да (5)</span>
+                                                <div class="b-poll-results_item_line">
+                                                    <div style="width:33%;"></div>
+                                                    <span>54%</span>
+                                                </div>
+                                            </li>
+                                            <li class="b-poll-results_item">
+                                                <span>Нет (5)</span>
+                                                <div class="b-poll-results_item_line">
+                                                    <div style="width:33%;"></div>
+                                                    <span>54%</span>
+                                                </div>
+                                            </li>
+                                            <li class="b-poll-results_item">
+                                                <span>Не покупаю лекарства (5)</span>
+                                                <div class="b-poll-results_item_line">
+                                                    <div style="width:33%;"></div>
+                                                    <span>54%</span>
+                                                </div>
+                                            </li>
+                                            <li class="b-poll-results_item">
+                                                <span>Не болею (5)</span>
+                                                <div class="b-poll-results_item_line">
+                                                    <div style="width:33%;"></div>
+                                                    <span>54%</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="b-poll_actions">
+                                    <input type="submit" value="ОТВЕТИТЬ" class="b-poll_submit"/>
+                                    <a href="" class="b-poll_show-results">РЕЗУЛЬТАТЫ</a>
+                                    <a href="" class="b-poll_comeback">ВЕРНУТЬСЯ</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="b-poll_actions">
-                            <input type="submit" value="ОТВЕТИТЬ" class="b-poll_submit"/>
-                            <a href="" class="b-poll_show-results">РЕЗУЛЬТАТЫ</a>
-                            <a href="" class="b-poll_comeback">ВЕРНУТЬСЯ</a>
-                        </div>
+
                     </div>
 
                 </div>
@@ -340,7 +346,7 @@
                 <div class="b-products col-sm-12">
                     <h3 class="b-content_title b-content_title__product">Товар дня</h3>
                     <div class="row">
-                        <div class="col-md-15 col-sm-4 col-xs-12">
+                        <div class="col-md-15 col-sm-4 col-xs-6">
                             <div class="b-products-item">
                                 <div class="b-products-item_image">
                                     <img src="http://placehold.it/161x150?text=product+image" alt=""/>
@@ -372,7 +378,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-15 col-sm-4 col-xs-12">
+                        <div class="col-md-15 col-sm-4 col-xs-6">
                             <div class="b-products-item">
                                 <div class="b-products-item_image"><img src="http://placehold.it/161x150?text=product+image" alt=""/></div>
                                 <div class="b-products-item_description">
@@ -402,38 +408,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-15 col-sm-4 col-xs-12">
-                            <div class="b-products-item">
-                                <div class="b-products-item_image"><img src="http://placehold.it/161x150?text=product+image" alt=""/></div>
-                                <div class="b-products-item_description">
-                                    <h6><span>Аскорбиновая кислота с глюкоз сесана</span></h6>
-                                    <small>таблетки 200 шт.</small>
-                                </div>
-
-                                <div class="b-products-item_actions">
-                                    <div class="b-product-price">
-                                        <div class="b-product-price_sum">340 руб</div>
-                                        <div class="b-product-price_count">
-                                            <div class="b-product-price_count-number">
-                                                <input type="text" value="1" maxlength="2"/>
-                                            </div>
-                                            <div class="b-product-price_arrows">
-                                                <i data-change-count="up" class="js-change-count glyphicon glyphicon-chevron-up"></i>
-                                                <i data-change-count="down" class="js-change-count glyphicon glyphicon-chevron-down"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="b-products-items_in_cart">
-                                        <a href="">КУПИТЬ</a>
-                                        <i class="glyphicon glyphicon-heart-empty"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-15 col-sm-4 col-xs-12">
+                        <div class="col-md-15 col-sm-4 col-xs-6">
                             <div class="b-products-item">
                                 <div class="b-products-item_image"><img src="http://placehold.it/161x150?text=product+image" alt=""/></div>
                                 <div class="b-products-item_description">
@@ -464,7 +439,38 @@
                         </div>
 
 
-                        <div class="col-md-15 col-sm-4 col-xs-12">
+                        <div class="col-md-15 col-sm-4 col-xs-6">
+                            <div class="b-products-item">
+                                <div class="b-products-item_image"><img src="http://placehold.it/161x150?text=product+image" alt=""/></div>
+                                <div class="b-products-item_description">
+                                    <h6><span>Аскорбиновая кислота с глюкоз сесана</span></h6>
+                                    <small>таблетки 200 шт.</small>
+                                </div>
+
+                                <div class="b-products-item_actions">
+                                    <div class="b-product-price">
+                                        <div class="b-product-price_sum">340 руб</div>
+                                        <div class="b-product-price_count">
+                                            <div class="b-product-price_count-number">
+                                                <input type="text" value="1" maxlength="2"/>
+                                            </div>
+                                            <div class="b-product-price_arrows">
+                                                <i data-change-count="up" class="js-change-count glyphicon glyphicon-chevron-up"></i>
+                                                <i data-change-count="down" class="js-change-count glyphicon glyphicon-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="b-products-items_in_cart">
+                                        <a href="">КУПИТЬ</a>
+                                        <i class="glyphicon glyphicon-heart-empty"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-15 col-sm-4 col-xs-6">
                             <div class="b-products-item">
                                 <div class="b-products-item_image"><img src="http://placehold.it/161x150?text=product+image" alt=""/></div>
                                 <div class="b-products-item_description">
@@ -496,7 +502,7 @@
 
                         <hr class="b-products_line">
 
-                        <div class="col-md-15 col-sm-4 col-xs-12">
+                        <div class="col-md-15 col-sm-4 col-xs-6">
                             <div class="b-products-item">
                                 <div class="b-products-item_image"><img src="http://placehold.it/161x150?text=product+image" alt=""/></div>
                                 <div class="b-products-item_description">
@@ -531,13 +537,50 @@
             </div>
         </div>
     </div>
-
-
-
-
 </div>
 
-
+<div class="b-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-5">
+                <div class="b-footer_copyrights">
+                    ООО <b>"Новая аптека"</b><br/>
+                    <small>все права защищены &copy; 2015</small>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-7">
+                <div class="b-footer_contacts">
+                    <div class="b-footer_contacts_address">
+                        <small>Наш адрес</small>
+                        <br/>
+                        680031 г. Хабаровск,<br/>
+                        ул. Карла Маркса, 182
+                    </div>
+                    <div class="b-footer_contacts_phone">
+                        <small>Наши телефоны</small>
+                        <br/>
+                        <a href="#">(42437) <b>2-22-13</b></a><br/>
+                        <a href="#">(42437) <b>4-58-96</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+                <div class="b-footer_social">
+                    <small>Мы в соц. сетях:</small>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="b-footer_webalt">
+                    <a title="WEB ALTERNATIVE" href="http://web-alt.ru/">
+                        Сайт разработан <br>
+                        WEB ALTERNATIVE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

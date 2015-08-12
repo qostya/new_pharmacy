@@ -63,7 +63,7 @@ $(function () {
                     hideEl = function () {
                         $this.find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
                     };
-                sett = setTimeout(hideEl, 1000);
+                sett = setTimeout(hideEl, 2000);
             });
     }());
 });
