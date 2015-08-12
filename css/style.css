@@ -1284,7 +1284,7 @@ body {
     transition: transform 0.3s;
 }
 
-.css-circle-wrapper:hover .css-circle-hover {
+.b-header-favorite:hover .css-circle-hover, .css-circle-wrapper:hover .css-circle-hover {
     -webkit-transform: scale(40);
     -moz-transform: scale(40);
     -ms-transform: scale(40);
@@ -1311,7 +1311,7 @@ body {
     cursor: pointer;
 }
 
-.css-circle-wrapper:hover .b-header-favorites_hover-title {
+.b-header-favorite:hover .b-header-favorites_hover-title, .css-circle-wrapper:hover .b-header-favorites_hover-title {
     opacity: 1;
 }
 
