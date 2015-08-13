@@ -1,6 +1,5 @@
 body {
     font-family: Roboto, sans-serif;
-    padding-bottom: 150px;
 }
 
 .b-nav_top .fl-r {
@@ -1341,7 +1340,7 @@ body {
 
 .b-footer {
     border-top: 9px solid #363636;
-    padding-top: 40px;
+    padding: 40px 0 50px 0;
 }
 
 .b-footer_contacts a {
@@ -1396,6 +1395,198 @@ body {
 .navbar-header {
     display: none;
 }
+
+.b-social {
+    margin-top: 5px;
+}
+
+.b-social i {
+    display: inline-block;
+    margin-right: 5px;
+    background: url(../images/social-icons.png) no-repeat;
+    width: 26px;
+    height: 26px;
+}
+
+.b-social i:hover {
+    background-position-y: -25px;
+}
+
+.b-social .b-social_vk {
+    background-position: 0 0;
+}
+
+.b-social .b-social_ok {
+    background-position: -26px 0;
+}
+
+.b-social .b-social_fb {
+    background-position: -52px 0;
+}
+
+.b-promotion {
+    margin-top: 25px;
+}
+
+.b-promotion-left {
+    padding: 0 0 0 10px;
+}
+
+.b-promotion-left > div {
+    background-color: #fff;
+    overflow: hidden;
+    border-left: 15px solid #E9485F;
+    padding: 20px 20px 0 15px;
+    min-height: 195px;
+}
+
+.b-promotion-right {
+    padding: 0 10px 0 0;
+    position: relative;
+}
+
+.b-promotion-right:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-right-color: #E9485F;
+    top: 50%;
+    margin-top: -20px;
+    right: 100%;
+    
+}
+
+.b-promotion-right > div {
+    color: #fff;
+    background-color: #E9485F;
+    padding: 20px 0 0 15px;
+    height: 195px;
+}
+
+.b-promotion_image {
+    float: left;
+    width: 30%;
+    padding-bottom: 30px;
+}
+
+.b-promotion_image img {
+    max-width: 100%;
+}
+
+.b-promotion-description {
+    float: left;
+    width: 70%;
+    padding-left: 20px;
+}
+
+.b-promotion-description_title {
+    font-weight: 200;
+    font-size: 22px;
+    color: #2FAC32;
+    text-transform: uppercase;
+}
+
+.b-promotion-description_in-cart {
+    background-color: #363636;
+    padding: 13px 40px 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+}
+
+.b-promotion-description_in-cart:hover {
+    color: #fff;
+    background-color: #E9485F;
+    text-decoration: none;
+}
+
+.b-promotion-right_title {
+    padding-left: 16%;
+    font-size: 22px;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.b-promotion-right_text {
+    text-align: center;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+.b-promotion-right_time {
+    text-align: center;
+    padding: 0 30px 0 15px;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 43px;
+}
+
+.b-promotion-right_time:after {
+    content: ' ';
+    display: table;
+}
+
+.b-promotion-right_time > div {
+    padding: 0;
+}
+
+.b-promotion-right_time_count {
+    font-size: 28px;
+    font-weight: bold;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    line-height: 22px;
+    position: relative;
+}
+
+.b-promotion-right_time > div:first-child .b-promotion-right_time_count {
+    border-right: none;
+}
+
+.b-promotion-right_time > div:last-child .b-promotion-right_time_count {
+    border-left: none;
+}
+
+.b-promotion-right_time_count:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: -25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1501,6 +1692,27 @@ body {
 
     .b-products_line {
         display: none;
+    }
+
+    .b-promotion-right {
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    .b-promotion-right:before {
+        top: auto;
+        right: 50%;
+        margin-right: -20px;
+        bottom: 100%;
+        border-right-color: transparent;
+        border-bottom-color: #E9485F;
+    }
+
+    .b-promotion-left > div {
+        border-left: none;
+        border-top: 15px solid #E9485F;
+        min-height: 195px;
+        padding: 20px 20px 15px 15px;
     }
 }
 
