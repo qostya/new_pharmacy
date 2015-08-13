@@ -1489,6 +1489,11 @@ body {
     text-transform: uppercase;
 }
 
+.b-promotion-description_text {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
 .b-promotion-description_in-cart {
     background-color: #363636;
     padding: 13px 40px 10px;
