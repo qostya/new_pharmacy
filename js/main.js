@@ -72,7 +72,7 @@ $(function () {
             }).click(function (ev) {
                 var $this = $(this);
                 var $this_drop = $this.children('.b-categories-dropdown');
-                if ($this_drop.length && !$(ev.target).parents('.b-dropdown-list').length) {
+                if ($this_drop.length && !$(ev.target).parents('.b-categories-dropdown').length) {
                     $this.toggleClass('b-categories-dropdown__active_important');
                     return false;
                 }
