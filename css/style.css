@@ -1083,6 +1083,16 @@ body {
     display: table;
 }
 
+.b-calendar .event {
+    background-color: #D1D1D1;
+    cursor: pointer;
+}
+
+.b-calendar .event:hover,.b-calendar .js-event_is-active {
+    background-color: #E9485F;
+    color: #fff;
+}
+
 .b-calendar-wrap {
     background: #E9485F;
     padding: 4px;
@@ -1153,6 +1163,21 @@ body {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
+    opacity: 1;
+    -webkit-transition: transform 0.4s, background-color 0.4s;
+    -moz-transition: transform 0.4s, background-color 0.4s;
+    -ms-transition: transform 0.4s, background-color 0.4s;
+    -o-transition: transform 0.4s, background-color 0.4s;
+    transition: transform 0.4s, background-color 0.4s;
+}
+
+.b-calendar_event_icon__active i {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+    background-color: #D1D1D1;
 }
 
 .b-calendar_event_text {

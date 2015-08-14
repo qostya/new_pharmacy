@@ -763,7 +763,8 @@
             <div class="b-calendar_days-of-the-week">
                 <div class="b-calendar_days">
                     <% _.each(days, function(day) { %>
-                    <div class="b-calendar_<%= day.classes %>"><%= day.day %></div>
+                    <div class="b-calendar_<%= day.classes %>"
+                         data-title="<% _.each(day.events, function(event) { %><%= event.title %><% }); %>"><%= day.day %></div>
                     <% }); %>
                 </div>
             </div>

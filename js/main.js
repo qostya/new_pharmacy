@@ -30,7 +30,39 @@ $(function () {
     });
 
     $('.js-calendar').clndr({
-        template: $('#clndr-template').html()
+        template: $('#clndr-template').html(),
+        events: [
+            {
+                date: '2015-08-18',
+                title: 'В продажу поступило новое эффективное средство от простуды - “Hamsherlife”'
+            },
+            {
+                date: '2015-08-28',
+                title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi corporis, dolorem eum facere in itaque.'
+            },
+            {
+                date: '2015-08-05',
+                title: 'Aspernatur commodi corporis, dolorem eum facere in itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.'
+            }
+        ]
+
+    });
+
+    $('.b-calendar_days').on('click', function (ev) {
+        var $this_target = $(ev.target),
+            sett;
+        if ($this_target.hasClass('event')) {
+            sett = setTimeout(function () {
+                clearTimeout(sett);
+                $('.b-calendar_event_icon').removeClass('b-calendar_event_icon__active');
+                $('.b-calendar_event_text').html($this_target.data('title'));
+            }, 400);
+
+            $('.b-calendar_event_icon').addClass('b-calendar_event_icon__active');
+
+            $this_target.siblings('.js-event_is-active').removeClass('js-event_is-active');
+            $this_target.addClass('js-event_is-active');
+        }
     });
 
     $('.b-poll-results_item_line div').width(function () {
