@@ -50,12 +50,17 @@ $(function () {
 
     $('.b-calendar_days').on('click', function (ev) {
         var $this_target = $(ev.target),
-            sett;
+            sett, sett2;
         if ($this_target.hasClass('event')) {
             sett = setTimeout(function () {
-                clearTimeout(sett);
                 $('.b-calendar_event_icon').removeClass('b-calendar_event_icon__active');
-                $('.b-calendar_event_text').html($this_target.data('title'));
+                sett2 = setTimeout(function () {
+                    clearTimeout(sett2);
+                    clearTimeout(sett);
+
+                    $('.b-calendar_event_text').html($this_target.data('title'));
+                }, 300);
+
             }, 400);
 
             $('.b-calendar_event_icon').addClass('b-calendar_event_icon__active');
