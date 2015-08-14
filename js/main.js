@@ -11,8 +11,12 @@ $(function () {
     });
 
     $('body').on('click', function (ev) {
-        if (!$(ev.target).parents('.b-cart').length) {
+        if ( !$(ev.target).parents('.b-cart').length ) {
             $('.b-cart').removeClass('b-cart__active').find('.b-cart_bottom').slideUp();
+        }
+
+        if ( !$(ev.target).parents('.b-categories-dropdown__active_important').length ) {
+            $('.b-categories-dropdown__active_important').removeClass('b-categories-dropdown__active_important');
         }
     });
 
@@ -53,10 +57,11 @@ $(function () {
         var sett;
         $('.b-categories .nav > li')
             .hover(function (ev) {
-                if (!$(this).hasClass('b-categories-dropdown__active')) {
+                var $this = $(this);
+                if (!$this.hasClass('b-categories-dropdown__active')) {
                     clearTimeout(sett);
-                    $(this).siblings('li').find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
-                    $(this).find('.b-categories-dropdown').addClass('b-categories-dropdown__active');
+                    $this.siblings('li').find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
+                    $this.find('.b-categories-dropdown').addClass('b-categories-dropdown__active');
                 }
             }, function (ev) {
                 var $this = $(this),
@@ -64,6 +69,22 @@ $(function () {
                         $this.find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
                     };
                 sett = setTimeout(hideEl, 2000);
+            }).click(function (ev) {
+                var $this = $(this);
+                var $this_drop = $this.children('.b-categories-dropdown');
+                if ($this_drop.length && !$(ev.target).parents('.b-dropdown-list').length) {
+                    $this.toggleClass('b-categories-dropdown__active_important');
+                    return false;
+                }
             });
     }());
+
+    $('.js-heart-icon').click(function () {
+        var $this = $(this);
+        if ($this.hasClass('js-heart-icon--active')) {
+            $this.removeClass('js-heart-icon--active');
+        } else {
+            $this.addClass('js-heart-icon--active');
+        }
+    });
 });
