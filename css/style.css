@@ -116,14 +116,26 @@ body {
     content: '';
     display: block;
     position: absolute;
+    -webkit-transition: background-color 0.2s;
+    -moz-transition: background-color 0.2s;
+    -ms-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
 }
 
 .b-header-info_phone_icon:before {
-    width: 21px;
-    height: 28px;
-    top: 26px;
-    left: -46px;
+    width: 54px;
+    height: 54px;
+    top: 7px;
+    left: -66px;
     background: url(../images/phone-header.png) no-repeat;
+}
+
+.b-header-info_phone_icon:hover:before {
+    background: url(../images/phone-header-hover.png) no-repeat, #E9485F;
 }
 
 .b-header-info_time_icon:before {
@@ -132,6 +144,10 @@ body {
     top: 7px;
     left: -66px;
     background: url(../images/clocks-header.png) no-repeat;
+}
+
+.b-header-info_time_icon:hover:before {
+    background: url(../images/clocks-header-hover.png) no-repeat, #E9485F;
 }
 
 .b-header-info_title {
@@ -868,7 +884,60 @@ body {
     background: #fff;
     border: 1px solid #D4D4D4;
     margin-bottom: 10px;
+    position: relative;
 }
+
+.b-products-item_recipe {
+    display: block;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: url(../images/recipe.png) no-repeat, #E9485F;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    right: 2px;
+    top: 2px;
+    cursor: help;
+}
+
+.b-products-item_recipe:hover {
+    background-color: #E07080;
+}
+
+.b-products-item_recipe span {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #fff;
+    width: 225px;
+    font-size: 14px;
+    display: none;
+    padding: 5px 10px;
+    -webkit-box-shadow: 0 4px 25px -3px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 0 4px 25px -3px rgba(0, 0, 0, 0.42);
+    box-shadow: 0 4px 25px -3px rgba(0, 0, 0, 0.42);
+}
+
+.b-products-item_recipe:hover span,
+.b-products-item_recipe:active span,
+.b-products-item_recipe:focus span {
+    display: block;
+}
+
+.b-products-item_recipe span:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+    top: -15px;
+    right: 8px;
+}
+
+
 
 .b-products-item_image img {
     width: 100%;
