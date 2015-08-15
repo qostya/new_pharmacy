@@ -92,6 +92,18 @@ $(function () {
 
         return false;
     });
+    (function () {
+        var sett;
+        $('.b-nav_top_has-dropdown').hover(function (ev) {
+            clearTimeout(sett);
+            $(this).find('.b-nav_top_dropdown').slideDown('fast');
+        }, function () {
+            var $this = $(this);
+            sett = setTimeout(function () {
+                $this.find('.b-nav_top_dropdown').slideUp('fast');
+            }, 2000);
+        });
+    }());
 
 
     (function () {
@@ -123,17 +135,17 @@ $(function () {
     $('.js-heart-icon').click(function () {
         var $this = $(this),
             sett;
+
         $this.toggleClass('js-heart-icon--active');
-        clearTimeout(sett);
+        $this.siblings('span').slideDown();
 
         if ($this.hasClass('js-heart-icon--active')) {
-            $this.siblings('span').slideDown().text('Добавлено в избранное.');
-            clearTimeout(sett);
+            $this.siblings('span').text('Добавлено в избранное.').slideDown();
         } else {
-            $this.siblings('span').slideDown().text('Удалено из избранного.');
+            $this.siblings('span').text('Удалено из избранного.').slideDown();
         }
 
-        sett = setTimeout(function () {
+        setTimeout(function () {
             $this.siblings('span').slideUp();
         }, 2000);
     });
