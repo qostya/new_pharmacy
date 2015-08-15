@@ -1184,12 +1184,12 @@ input::-moz-placeholder {
     transition: all 0.2s;
 }
 
-.b-products-items_in_cart .js-heart-icon--active {
+.b-products-items_in_cart .js-add-to-favorites--active {
     color: #fff;
 }
 
 .b-products-items_in_cart i:hover:after,
-.b-products-items_in_cart .js-heart-icon--active:after {
+.b-products-items_in_cart .js-add-to-favorites--active:after {
     width: 36px;
     height: 36px;
     background: #E9485F;
@@ -1885,7 +1885,23 @@ input::-moz-placeholder {
     top: -25px;
 }
 
-
+.b-popup_in-cart {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    margin: auto;
+    background: #fff;
+    color: #000;
+    width: 300px;
+    display: none;
+    z-index: 100;
+    padding: 10px;
+    -webkit-box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.46);
+    box-shadow: 0 4px 15px -3px rgba(0, 0, 0, 0.46);
+}
 
 
 

@@ -131,22 +131,28 @@ $(function () {
                 }
             });
     }());
+    (function () {
+        var sett;
+        $('.js-add-to-favorites').click(function () {
+            var $this = $(this),
+                $popup_block = $('.js-in-cart-popup'),
+                $product_title = $this.parents('.js-product-in-cart').find('.js-product-title').text();
+            $this.toggleClass('js-add-to-favorites--active');
 
-    $('.js-heart-icon').click(function () {
-        var $this = $(this),
-            sett;
+            clearTimeout(sett);
 
-        $this.toggleClass('js-heart-icon--active');
-        $this.siblings('span').slideDown();
+            $popup_block.fadeIn();
 
-        if ($this.hasClass('js-heart-icon--active')) {
-            $this.siblings('span').text('Добавлено в избранное.').slideDown();
-        } else {
-            $this.siblings('span').text('Удалено из избранного.').slideDown();
-        }
+            if ($this.hasClass('js-add-to-favorites--active')) {
+                $popup_block.html('Товар <span class="text-green">«' + $product_title + '»</span> добавлен в избранное.');
+            } else {
+                $popup_block.html('Товар <span class="text-green">«' + $product_title + '»</span> удалён из избранного.');
+            }
 
-        setTimeout(function () {
-            $this.siblings('span').slideUp();
-        }, 2000);
-    });
+            sett = setTimeout(function () {
+                $popup_block.fadeOut();
+            }, 2000);
+        });
+
+    }());
 });
