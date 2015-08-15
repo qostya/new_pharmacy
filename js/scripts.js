@@ -1,3 +1,6 @@
+/**
+ * Created by Constantine on 15.08.2015.
+ */
 $(function () {
     $('.index-slider').bxSlider({
         pager: false,
@@ -34,7 +37,7 @@ $(function () {
         events: [
             {
                 date: '2015-08-18',
-                title: 'В продажу поступило новое эффективное средство от простуды - “Hamsherlife”'
+                title: 'Р’ РїСЂРѕРґР°Р¶Сѓ РїРѕСЃС‚СѓРїРёР»Рѕ РЅРѕРІРѕРµ СЌС„С„РµРєС‚РёРІРЅРѕРµ СЃСЂРµРґСЃС‚РІРѕ РѕС‚ РїСЂРѕСЃС‚СѓРґС‹ - вЂњHamsherlifeвЂќ'
             },
             {
                 date: '2015-08-28',
@@ -119,10 +122,12 @@ $(function () {
 
     $('.js-heart-icon').click(function () {
         var $this = $(this);
-        if ($this.hasClass('js-heart-icon--active')) {
-            $this.removeClass('js-heart-icon--active');
+        $this.toggleClass('js-heart-icon--active');
+
+        if (!$this.hasClass('js-heart-icon--active')) {
+            $this.siblings('span').text('Р”РѕР±Р°РІР»РµРЅРѕ РІ Р¶РµР»Р°РµРјРѕРµ.');
         } else {
-            $this.addClass('js-heart-icon--active');
+            $this.siblings('span').text('РЈРґР°Р»РµРЅРѕ РёР· Р¶РµР»Р°РµРјРѕРіРѕ.');
         }
     });
 });
