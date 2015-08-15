@@ -274,7 +274,7 @@ body {
 .b-menu-line_item a:before {
     content: '';
     display: block;
-    width: 10px;
+    width: 6%;
     height: 10px;
     opacity: 0;
     bottom: -20px;
@@ -497,6 +497,25 @@ body {
 .b-search_input {
     display: inline-block;
     vertical-align: top;
+}
+
+.b-search_input input::-webkit-input-placeholder {
+    padding-left: 0;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    transition: text-indent 0.5s, color 0.5s;
+}
+
+input::-moz-placeholder {
+    color: #b2b2b2;
+    opacity: 1;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+    text-indent: 10em;
+    color: transparent;
 }
 
 .b-search-field {
@@ -1216,6 +1235,7 @@ body {
     background: #fff;
     clear: both;
     padding: 10px 5px 15px;
+    display: none;
 }
 
 .b-calendar_event_icon {

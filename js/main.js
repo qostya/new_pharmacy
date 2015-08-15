@@ -12,7 +12,7 @@ $(function () {
 
     $('body').on('click', function (ev) {
         if ( !$(ev.target).parents('.b-cart').length ) {
-            $('.b-cart').removeClass('b-cart__active').find('.b-cart_bottom').slideUp();
+            $('.b-cart').removeClass('b-cart__active').find('.b-cart_bottom').slideUp('fast');
         }
 
         if ( !$(ev.target).parents('.b-categories-dropdown__active_important').length ) {
@@ -34,7 +34,7 @@ $(function () {
         events: [
             {
                 date: '2015-08-18',
-                title: 'Р’ РїСЂРѕРґР°Р¶Сѓ РїРѕСЃС‚СѓРїРёР»Рѕ РЅРѕРІРѕРµ СЌС„С„РµРєС‚РёРІРЅРѕРµ СЃСЂРµРґСЃС‚РІРѕ РѕС‚ РїСЂРѕСЃС‚СѓРґС‹ - вЂњHamsherlifeвЂќ'
+                title: 'В продажу поступило новое эффективное средство от простуды - “Hamsherlife”'
             },
             {
                 date: '2015-08-28',
@@ -53,6 +53,7 @@ $(function () {
             sett, sett2;
         if ($this_target.hasClass('event')) {
             sett = setTimeout(function () {
+                $('.b-calendar_event').slideDown('fast');
                 $('.b-calendar_event_icon').removeClass('b-calendar_event_icon__active');
                 sett2 = setTimeout(function () {
                     clearTimeout(sett2);
