@@ -1143,6 +1143,18 @@ input::-moz-placeholder {
     background: #E9485F;
 }
 
+.b-products-items_in_cart span {
+    position: absolute;
+    top: 44px;
+    right: 0;
+    font-size: 12px;
+    background: #fff;
+    padding: 0 7px;
+    color: #000;
+    display: none;
+    line-height: 16px;
+}
+
 .b-products_line {
     width: 95%;
     clear: both;

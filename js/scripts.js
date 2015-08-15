@@ -121,13 +121,20 @@ $(function () {
     }());
 
     $('.js-heart-icon').click(function () {
-        var $this = $(this);
+        var $this = $(this),
+            sett;
         $this.toggleClass('js-heart-icon--active');
+        clearTimeout(sett);
 
-        if (!$this.hasClass('js-heart-icon--active')) {
-            $this.siblings('span').text('Добавлено в желаемое.');
+        if ($this.hasClass('js-heart-icon--active')) {
+            $this.siblings('span').slideDown().text('Добавлено в избранное.');
+            clearTimeout(sett);
         } else {
-            $this.siblings('span').text('Удалено из желаемого.');
+            $this.siblings('span').slideDown().text('Удалено из избранного.');
         }
+
+        sett = setTimeout(function () {
+            $this.siblings('span').slideUp();
+        }, 2000);
     });
 });
