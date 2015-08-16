@@ -3,6 +3,24 @@
  */
 $(function () {
 
+
+    (function () {
+        var eventTime= +Date.parse('2015-08-26');
+        var currentTime = +(new Date());
+        var diffTime = eventTime - currentTime;
+        var duration = moment.duration(diffTime, 'milliseconds');
+        var interval = 1000;
+
+        setInterval(function(){
+            duration = moment.duration(duration - interval, 'milliseconds');
+            $('.countdown_days').text(duration.days());
+            $('.countdown_hours').text(duration.hours());
+            $('.countdown_minutes').text(duration.minutes());
+            $('.countdown_seconds').text(duration.seconds());
+        }, interval);
+    }());
+
+
     var slideUpAndDownByClick = function (elSub, elObj) {
         var $elSub = $('.' + elSub),
             $elObj = $('.' + elObj);
