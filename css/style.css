@@ -1567,6 +1567,36 @@ input::-moz-placeholder {
     bottom: -5px;
 }
 
+.b-content_title__seen:before,
+.b-content_title__similar:before {
+    content: '';
+    background: url(../images/title-icons-2.png), #E9485F;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-bottom: -11px;
+    margin-right: 7px;
+}
+
+.b-content_title__seen {
+    margin-left: -5px;
+}
+
+.b-content_title__similar {
+    margin-top: 20px;
+    margin-left: -5px;
+}
+
+
+.b-content_title__similar:before {
+    background-position: -36px 0;
+}
+
+
 .css-circle-wrapper {
     position: absolute;
     width: 100%;
@@ -2308,7 +2338,8 @@ table tr:hover .b-single-product_location-price {
     text-decoration: none;
 }
 
-.b-single-review_add:hover {
+.b-single-review_add:hover,
+.js-show-reviews-form__active.b-single-review_add {
     background: #E9485F;
 }
 
