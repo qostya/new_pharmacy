@@ -2002,6 +2002,11 @@ input::-moz-placeholder {
     margin-top: 5px;
 }
 
+.b-single-product h2 .title-grey,
+.b-cart-page h2 .title-grey {
+    color: #bebebe;
+}
+
 .b-single-product p,
 .b-cart-page p {
     font-weight: 300;
@@ -2458,7 +2463,6 @@ table tr:hover .b-single-product_location-price {
     display: inline-block;
     line-height: 16px;
     font-size: 13px;
-    text-indent: 1px;
     cursor: pointer;
 }
 
@@ -2613,12 +2617,64 @@ table tr:hover .b-single-product_location-price {
     opacity: 0.8;
 }
 
+.b-cart-page-form {
+    position: relative;
+}
+
+.b-cart-page-form input {
+    padding: 0 10px;
+    border: 1px solid #B0B0B0;
+    height: 40px;
+    line-height: 41px;
+    display: block;
+    position: relative;
+}
+
+.b-cart-page-form_fio input,
+.b-cart-page-form_comment textarea {
+    width: 100%;
+}
+
+.b-cart-page-form_comment textarea {
+    padding: 10px;
+    border: 1px solid #B0B0B0;
+    resize: none;
+    display: block;
+}
+
+.b-cart-page-form_email,
+.b-cart-page-form_phone {
+    width: 50%;
+}
+
+.b-cart-page-form_email input,
+.b-cart-page-form_phone input {
+    width: 100%;
+}
+
+.b-cart-page-form form > div {
+    margin-bottom: 10px;
+    position: relative;
+}
 
 
+.b-cart-page-form .b-cart-page-table_full-price_confirm {
+    top: auto;
+    bottom: 0;
+    margin-left: 0;
+}
 
-
-
-
+.css-triangle {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 10px 10px;
+    border-color: transparent transparent #b40000 transparent;
+    bottom: 1px;
+    right: 1px;
+}
 
 
 
