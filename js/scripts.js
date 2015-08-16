@@ -2,6 +2,27 @@
  * Created by Constantine on 15.08.2015.
  */
 $(function () {
+
+    var slideUpAndDownByClick = function (elSub, elObj) {
+        var $elSub = $('.' + elSub),
+            $elObj = $('.' + elObj);
+
+        $elSub.click(function () {
+            if (!$elSub.hasClass(elSub + '__active')) {
+                $elObj.slideDown('fast');
+            } else {
+                $elObj.slideUp('fast');
+            }
+            $elSub.toggleClass(elSub + '__active');
+            return false;
+        });
+
+    };
+
+    slideUpAndDownByClick('js-show-reviews', 'js-reviews');
+    slideUpAndDownByClick('js-show-reviews-form', 'js-reviews-form');
+
+
     $('.index-slider').bxSlider({
         pager: false,
         nextText: '',
@@ -153,6 +174,5 @@ $(function () {
                 $popup_block.fadeOut();
             }, 2000);
         });
-
     }());
 });

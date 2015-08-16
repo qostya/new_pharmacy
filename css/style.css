@@ -1356,6 +1356,7 @@ input::-moz-placeholder {
     color: #fff;
     margin-top: 15px;
     font-weight: 300;
+    margin-bottom: 30px;
 }
 
 .b-poll-wrapper {
@@ -2195,6 +2196,196 @@ table tr:hover .b-single-product_location-price {
     height: 36px;
     background: #E9485F;
 }
+
+.b-reviews {
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.b-reviews_head a {
+    display: block;
+    float: left;
+    width: 50%;
+    line-height: 44px;
+    height: 42px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.b-reviews_head_ask {
+    background: #E9485F;
+}
+
+.b-reviews_head_all {
+    background: #363636;
+    position: relative;
+    padding-right: 44px;
+}
+
+.b-reviews_head_all:after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    background: url(../images/quotes-down.png) no-repeat;
+    border: 1px solid #696969;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    top: 9px;
+    right: 10px;
+    -webkit-transition: transform 0.2s;
+    -moz-transition: transform 0.2s;
+    -ms-transition: transform 0.2s;
+    -o-transition: transform 0.2s;
+    transition: transform 0.2s;
+}
+
+.b-reviews_body {
+    display: none;
+}
+
+.b-single-review {
+    min-height: 122px;
+    position: relative;
+}
+
+.b-single-review_image {
+    width: 122px;
+    height: 122px;
+    text-align: center;
+    padding-top: 19px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.b-single-review_description {
+    padding: 20px 0 12px 122px;
+}
+
+.b-single-review_name {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.b-single-review_date {
+    font-size: 10px;
+    color: #696969;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.b-single-review_text {
+    color: #1c1c1c;
+    font-weight: 300;
+}
+
+.b-reviews-line {
+    width: 90%;
+    margin: 0 auto;
+    clear: both;
+    height: 4px;
+    background: url(../images/dotted-line.png) repeat-x;
+}
+
+.b-single-review_add {
+    width: 100%;
+    height: 42px;
+    line-height: 44px;
+    color: #fff;
+    background: #363636;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.b-single-review_add:hover {
+    background: #E9485F;
+}
+
+
+.b-single-review_add:hover,
+.b-single-review_add:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.b-reviews-form {
+    padding: 20px;
+    display: none;
+}
+
+.b-reviews-form_name,
+.b-reviews-form_text {
+    margin-bottom: 10px;
+}
+
+.b-reviews-form_name input,
+.b-reviews-form_text textarea {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #999ea3;
+    -webkit-transition: box-shadow 0.2s;
+    -moz-transition: box-shadow 0.2s;
+    -ms-transition: box-shadow 0.2s;
+    -o-transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s;
+}
+
+.b-reviews-form_name input:focus,
+.b-reviews-form_text textarea:focus {
+    outline: 1px solid #2FAC32;
+    outline-offset: -1px;
+    border-color: transparent;
+    box-shadow: 0 0 5px rgba(104, 125, 105, 0.6);
+}
+
+.b-reviews-form_text textarea {
+    height: 100px;
+    resize: none;
+    display: block;
+}
+
+.b-reviews-form_send input {
+    padding: 9px 30px 8px;
+    background-color: #2FAC32;
+    position: relative;
+    display: block;
+    color: #fff;
+    border: none;
+    outline: none;
+    -webkit-transition: background-color 0.2s ease;
+    -moz-transition: background-color 0.2s ease;
+    -ms-transition: background-color 0.2s ease;
+    -o-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+.b-reviews-form_send input:hover {
+    background-color: #E9485F;
+}
+
+.js-show-reviews__active:after {
+    -moz-transform: scale(1,-1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    transform: scale(1, -1);
+}
+
+
+
+
+
+
 
 
 
