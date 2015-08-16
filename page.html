@@ -1,0 +1,486 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New pharmacy</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<div class="b-header">
+    <div class="b-header_top">
+        <div class="container">
+            <nav class="b-nav_top">
+                <ul class="nav navbar-nav col-xs-8">
+                    <li class="b-nav_top_has-dropdown">
+                        <a><i class="icon__location"></i>
+                            <span>ХАБАРОВСК</span>
+                        </a>
+                        <ul class="b-nav_top_dropdown">
+                            <li><a href="#">Хабаровск</a></li>
+                            <li><a href="#">Владивосток</a></li>
+                            <li><a href="#">Комсомольск-на-Амуре</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=""><span>ул. Дзержинского, 15</span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right col-xs-5 col-sm-4">
+                    <li class="fl-r"><a href="" class="b-nav_registration"><i class="icon__registration"></i>Регистрация/Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <a href="#" class="logo logo-header">Новая аптека</a>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6 b-header-info_phone_wrapper">
+                <div class="b-header-info b-header-info_phone_icon">
+                    <span class="b-header-info_title">Наши телефоны</span><br>
+                    <a href="#" class="b-header-info_phone">+7 (987) 654-32-10</a><br>
+                    <a href="#" class="b-header-info_phone">+7 (012) 345-67-89</a>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6 b-header-info_time_wrapper">
+                <div class="b-header-info b-header-info_time_icon">
+                    <span class="b-header-info_title">Режим работы</span><br>
+                    <div class="b-header-info_time">с 9:00 - 18:00</div>
+                    <small class="b-header-info_time-small-text">без перерывов</small>
+                </div>
+            </div>
+
+            <div class="js-product-in-cart col-md-3 col-sm-6 col-xs-12">
+                <div class="b-header-favorite js-add-to-favorites">
+                    <div class="b-header-favorite_image">
+                        <img src="images/70x90.png" alt="img"/>
+                    </div>
+                    <div class="b-header-favorite_description">
+                        <h5 class="js-product-title">АЛФАВИТ (для мужчин)</h5>
+                        <small>таблетки 200 шт.</small>
+                        <div class="b-header-favorite_description_price">
+                            <strong>420</strong> руб
+                        </div>
+                    </div>
+                    <div class="css-circle-wrapper">
+                        <!-- Можно переиспользовать, удалив .b-header-favorites_hover-title. onclick для примера добавления в корзину -->
+                        <div class="css-circle-hover"></div>
+                        <div class="b-header-favorites_hover-title" onclick="javascript:void(0)">
+                            Добавить в корзину
+                        </div>
+                    </div>
+
+                    <div class="b-favorive_heart"><i class="glyphicon glyphicon-heart-empty"></i></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="b-menu-line container">
+        <div class="navbar navbar-default">
+            <div class="container-fluid no_padding">
+                <div class="navbar-header">
+                    <span>Меню</span>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".b-menu-line_collapse" aria-expanded="false">
+                        <span class="sr-only">Навигация</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="b-menu-line_collapse navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="b-menu-line_item"><a href="#"><span>Компания</span></a></li>
+                    <li class="b-menu-line_item"><a href="#"><span>Каталог</span></a></li>
+                    <li class="b-menu-line_item"><a href="#"><span>Акции</span></a></li>
+                    <li class="b-menu-line_item"><a href="#"><span>Условия заказа</span></a></li>
+                    <li class="b-menu-line_item"><a href="#"><span>Адреса аптек</span></a></li>
+                    <li class="b-menu-line_item"><a href="#"><span>Отзывы</span></a></li>
+                    <li class="b-menu-line_item"><a href="#"><span>Полезная информация</span></a></li>
+                    <li class="b-menu-line_item"><a href="#"><span>Справочная служба</span></a></li>
+                    <li class="b-menu-line_item"><a href="#"><span>Контакты</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b-wrapper">
+    <div class="b-search">
+        <div class="container">
+            <div class="b-search-wrap">
+                <div class="b-search-left">
+                    <div class="b-search-field">
+                        <form action="/" method="get">
+                            <div class="b-search_input">
+                                <input type="text" id="search" placeholder="Введите наименование товара" required/>
+                                <label class="b-search_icon" for="search">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                </label>
+                                <button type="button" class="btn b-search_button">НАЙТИ</button>
+                            </div>
+
+                            <div class="b-search_in_stock">
+                                <input type="checkbox" id="in_stock" />
+                                <label for="in_stock">показывать только имеющийся в наличии товар</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="b-search-right">
+                    <div class="b-cart">
+                        <div class="b-cart_top">
+                            <div class="b-cart_icon">
+                                <i class="transition_all_02s"></i>
+                                <span class="transition_all_02s">6</span>
+                            </div>
+                            <div class="b-cart_description transition_all_02s">
+                                <span>Товаров на</span><br>
+                                <strong>1890</strong> руб
+                            </div>
+                        </div>
+                        <div class="b-cart_bottom">
+                            <table class="b-cart-table" border="0">
+                                <tr>
+                                    <td class="b-cart-table_title">
+                                        <a href="#">Альфаган</a>
+                                    </td>
+                                    <td class="b-cart-table_count">
+                                        <!-- <input/> можно убрать, оставив лишь значение: <div>1</div> -->
+                                        <div><input type="text" value="1" maxlength="2"/></div>
+                                    </td>
+                                    <td class="b-cart-table_price">
+                                        <div>200 р</div>
+                                    </td>
+                                    <td class="b-cart-table_actions">
+                                        <i class="b-cart-table_remove">x</i>
+                                        <i class="b-cart-table_edit glyphicon glyphicon-pencil"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="b-cart-table_title">
+                                        <a href="#">Баларпан</a>
+                                    </td>
+                                    <td class="b-cart-table_count">
+                                        <div><input type="text" value="2" maxlength="2"/></div>
+                                    </td>
+                                    <td class="b-cart-table_price">
+                                        <div>400 р</div>
+                                    </td>
+                                    <td class="b-cart-table_actions">
+                                        <i class="b-cart-table_remove">x</i>
+                                        <i class="b-cart-table_edit glyphicon glyphicon-pencil"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="b-cart-table_issue" colspan="3"><div>ОФОРМИТЬ</div></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-content">
+        <div class="container">
+            <div class="row">
+                <div class="b-categories col-sm-12">
+                    <h3 class="b-content_title b-content_title__catalog">Каталог</h3>
+                    <div class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".b-categories__collapse" aria-expanded="false">
+                                    <span class="sr-only">Навигация</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+
+                            <div class="collapse navbar-collapse b-categories__collapse">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#"><span>Лекарственные средства</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>БАДы</span></a>
+                                        <div class="b-categories-dropdown">
+                                            <ul class="b-dropdown_cols">
+                                                <li>
+                                                    <ul class="b-dropdown-list">
+                                                        <li><a href="#">First</a></li>
+                                                        <li><a href="#">Second</a></li>
+                                                        <li><a href="#">Third</a></li>
+                                                        <li><a href="#">Fourth</a></li>
+                                                        <li><a href="#">Fifth</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="b-dropdown-list">
+                                                        <li><a href="#">First</a></li>
+                                                        <li><a href="#">Second</a></li>
+                                                        <li><a href="#">Third</a></li>
+                                                        <li><a href="#">Fourth</a></li>
+                                                        <li><a href="#">Fifth</a></li>
+                                                        <li><a href="#">Sixth</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#"><span>Ортопедия</span></a></li>
+                                    <li><a href="#"><span>Красота и уход</span></a></li>
+                                    <li><a href="#"><span>Мама и малыш</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="b-calendar col-sm-6 col-md-12">
+                            <div class="js-calendar"></div>
+                        </div>
+
+
+                        <div class="b-poll col-sm-6 col-md-12">
+                            <div class="b-poll-wrapper">
+                                <h3 class="b-content_title b-content_title__poll">Опрос</h3>
+                                <div class="b-poll-content">
+                                    <p>Устраивают ли вас цены на лекарства в вашем городе?</p>
+                                    <form action="/" class="b-poll-choices">
+                                        <ul>
+                                            <li class="b-poll_answer"><label><input type="radio" name="poll"/> Да</label></li>
+                                            <li class="b-poll_answer"><label><input type="radio" name="poll"/> Нет</label></li>
+                                            <li class="b-poll_answer"><label><input type="radio" name="poll"/> Не покупаю лекарства</label></li>
+                                            <li class="b-poll_answer"><label><input type="radio" name="poll"/> Не болею</label></li>
+                                        </ul>
+                                    </form>
+
+                                    <div class="b-poll-results">
+                                        <ul>
+                                            <li class="b-poll-results_item">
+                                                <span>Да (5)</span>
+                                                <div class="b-poll-results_item_line">
+                                                    <div style="width:33%;"></div>
+                                                    <span>54%</span>
+                                                </div>
+                                            </li>
+                                            <li class="b-poll-results_item">
+                                                <span>Нет (5)</span>
+                                                <div class="b-poll-results_item_line">
+                                                    <div style="width:33%;"></div>
+                                                    <span>54%</span>
+                                                </div>
+                                            </li>
+                                            <li class="b-poll-results_item">
+                                                <span>Не покупаю лекарства (5)</span>
+                                                <div class="b-poll-results_item_line">
+                                                    <div style="width:33%;"></div>
+                                                    <span>54%</span>
+                                                </div>
+                                            </li>
+                                            <li class="b-poll-results_item">
+                                                <span>Не болею (5)</span>
+                                                <div class="b-poll-results_item_line">
+                                                    <div style="width:33%;"></div>
+                                                    <span>54%</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="b-poll_actions">
+                                    <input type="submit" value="ОТВЕТИТЬ" class="b-poll_submit"/>
+                                    <a href="" class="b-poll_show-results">РЕЗУЛЬТАТЫ</a>
+                                    <a href="" class="b-poll_comeback">ВЕРНУТЬСЯ</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b-products col-sm-12">
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="b-page">
+                                <div class="b-breadcrumbs">
+                                    <a href="#">Главная</a> | <a href="#">Типовая страница</a>
+                                </div>
+                                <h2>Заголовок страницы</h2>
+                                <div class="b-page_text">
+                                    <p><img src="http://placehold.it/425x300" align="left" alt=""/> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi distinctio doloremque eos est facilis fugiat, id inventore ipsam iste, iusto labore magni molestiae molestias natus quas quod similique
+                                        soluta totam.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi delectus dicta dolore ducimus esse impedit incidunt, ipsum itaque iusto laboriosam magni nam nisi quibusdam recusandae repellendus rerum
+                                        sed veniam voluptatum!</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row">
+                        <div class="b-promotion col-md-12 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="b-promotion-left col-md-7">
+                                    <div>
+                                        <div class="b-promotion_image">
+                                            <img src="http://placehold.it/135x145" alt="promotion"/>
+                                        </div>
+                                        <div class="b-promotion-description">
+                                            <div class="b-promotion-description_title">Витрум кидс N30 ЖЕВ ТАБЛ</div>
+                                            <div class="b-promotion-description_text">Поливитаминное средство + минералы, упаковка 30 таблеток</div>
+                                            <a class="b-promotion-description_in-cart">Купить</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="b-promotion-right col-md-5">
+                                    <div>
+                                        <div class="b-promotion-right_title">Успей купить</div>
+                                        <div class="b-promotion-right_text">До окончания акции осталось</div>
+                                        <div class="b-promotion-right_time">
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <div class="b-promotion-right_time_count">10</div>
+                                                дней
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <div class="b-promotion-right_time_count">22</div>
+                                                часа
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                                <div class="b-promotion-right_time_count">15</div>
+                                                минут
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-5">
+                <div class="b-footer_copyrights">
+                    ООО <b>"Новая аптека"</b><br/>
+                    <small>все права защищены &copy; 2015</small>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-7 col-xs-12">
+                <div class="b-footer_contacts">
+                    <div class="b-footer_contacts_address">
+                        <small>Наш адрес</small>
+                        <br/>
+                        680031 г. Хабаровск,<br/>
+                        ул. Карла Маркса, 182
+                    </div>
+                    <div class="b-footer_contacts_phone">
+                        <small>Наши телефоны</small>
+                        <br/>
+                        <a href="#">(42437) <b>2-22-13</b></a><br/>
+                        <a href="#">(42437) <b>4-58-96</b></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-xs-12"></div>
+            <div class="col-md-2 col-xs-12">
+                <div class="b-footer_social">
+                    <small>Мы в соц. сетях:</small>
+                    <div class="b-social">
+                        <i class="b-social_vk"></i>
+                        <i class="b-social_ok"></i>
+                        <i class="b-social_fb"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12 col-xs-12">
+                <div class="b-footer_webalt">
+                    <a title="WEB ALTERNATIVE" href="http://web-alt.ru/">
+                        Сайт разработан <br>
+                        WEB ALTERNATIVE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="b-popup_in-cart js-in-cart-popup"></div>
+
+
+<script type="text/template" id="clndr-template">
+    <div class="b-calendar-wrap clearfix">
+        <div class="b-calendar_clndr-controls">
+            <div class="clndr-previous-button"><i class="glyphicon glyphicon-menu-left"></i></div>
+            <div class="b-calendar_month"><%= month %>, <%= year %></div>
+            <div class="clndr-next-button"><i class="glyphicon glyphicon-menu-right"></i></div>
+        </div>
+        <div class="b-calendar_clndr-grid">
+            <div class="b-calendar_days-of-the-week">
+                <div class="b-calendar_days">
+                    <% _.each(days, function(day) { %>
+                    <div class="b-calendar_<%= day.classes %>"
+                         data-title="<% _.each(day.events, function(event) { %><%= event.title %><% }); %>"><%= day.day %></div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b-calendar_event">
+        <div class="b-calendar_event_icon">
+            <i></i>
+        </div>
+        <div class="b-calendar_event_text">
+            В продажу поступило новое
+            эффективное средство от
+            простуды - <span class="text-green">“Hamsherlife”</span>
+        </div>
+    </div>
+</script>
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/moment/locale/ru.js"></script>
+<script src="bower_components/underscore/underscore-min.js"></script>
+<script src="bower_components/clndr/src/clndr.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

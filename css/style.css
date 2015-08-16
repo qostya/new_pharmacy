@@ -1995,7 +1995,8 @@ input::-moz-placeholder {
 }
 
 .b-single-product h2,
-.b-cart-page h2 {
+.b-cart-page h2,
+.b-page h2 {
     color: #2FAC32;
     font-weight: 300;
     font-size: 24px;
@@ -2003,7 +2004,8 @@ input::-moz-placeholder {
 }
 
 .b-single-product h2 .title-grey,
-.b-cart-page h2 .title-grey {
+.b-cart-page h2 .title-grey,
+.b-page h2 .title-grey {
     color: #bebebe;
 }
 
@@ -2676,6 +2678,28 @@ table tr:hover .b-single-product_location-price {
     right: 1px;
 }
 
+img[align="left"] {
+    margin: 0 20px 10px 0;
+}
+
+img[align="right"] {
+    margin: 0 0 10px 20px;
+}
+
+img[align="center"] {
+    display: block;
+    margin: 15px auto;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2766,7 +2790,8 @@ table tr:hover .b-single-product_location-price {
         padding: 0 10px;
     }
 
-    .b-cart-page {
+    .b-cart-page,
+    .b-page {
         margin-left: -5px;
         margin-bottom: 60px;
     }
