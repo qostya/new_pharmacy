@@ -2112,6 +2112,7 @@ table tr:hover .b-single-product_location-price {
     outline: none;
     background: #5ccd5e;
     text-align: center;
+    font-size: 12px;
 }
 
 .b-single-product-right_arrows {
