@@ -24,7 +24,7 @@ $(function () {
     });
 
     $('.js-change-count').click(function () {
-        var target_input = $(this).parents('.b-product-price_count').find('input');
+        var target_input = $(this).parents('.js-change-count_parent').find('input');
         if ($(this).data('changeCount') === 'up') {
             target_input.val(+target_input.val() + 1);
         } else if (target_input.val() > 0) {
@@ -144,9 +144,9 @@ $(function () {
             $popup_block.fadeIn();
 
             if ($this.hasClass('js-add-to-favorites--active')) {
-                $popup_block.html('Товар <span class="text-green">«' + $product_title + '»</span> добавлен в избранное.');
+                $popup_block.html('Товар <span class="text-green">«' + $product_title + '»</span> <u>добавлен</u> в избранное.');
             } else {
-                $popup_block.html('Товар <span class="text-green">«' + $product_title + '»</span> удалён из избранного.');
+                $popup_block.html('Товар <span class="text-green">«' + $product_title + '»</span> <u>удалён</u> из избранного.');
             }
 
             sett = setTimeout(function () {
