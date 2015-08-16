@@ -113,6 +113,7 @@ $(function () {
 
         return false;
     });
+
     (function () {
         var sett;
         $('.b-nav_top_has-dropdown').hover(function (ev) {
@@ -125,7 +126,6 @@ $(function () {
             }, 2000);
         });
     }());
-
 
     (function () {
         var sett;
