@@ -915,6 +915,9 @@ input::-moz-placeholder {
     top: -1px;
     z-index: 10;
     border: 1px solid #B0B0B0;
+    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.24);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.24);
 }
 
 .b-categories-dropdown__active {
