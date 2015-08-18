@@ -1742,7 +1742,7 @@ input::-moz-placeholder {
     margin-top: 5px;
 }
 
-.b-social i {
+.b-social a {
     display: inline-block;
     margin-right: 5px;
     background: url(../images/social-icons.png) no-repeat;
@@ -1750,7 +1750,7 @@ input::-moz-placeholder {
     height: 26px;
 }
 
-.b-social i:hover {
+.b-social a:hover {
     background-position-y: -25px;
 }
 
