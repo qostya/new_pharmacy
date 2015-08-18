@@ -1996,7 +1996,8 @@ input::-moz-placeholder {
 
 .b-single-product h2,
 .b-cart-page h2,
-.b-page h2 {
+.b-page h2,
+.b-order h2 {
     color: #2FAC32;
     font-weight: 300;
     font-size: 24px;
@@ -2005,8 +2006,19 @@ input::-moz-placeholder {
 
 .b-single-product h2 .title-grey,
 .b-cart-page h2 .title-grey,
-.b-page h2 .title-grey {
+.b-page h2 .title-grey,
+.b-order h2 .title-grey {
     color: #bebebe;
+}
+
+.b-single-product h2 .title-red,
+.b-cart-page h2 .title-red,
+.b-page h2 .title-red,
+.b-order h2 .title-red {
+    color: #fff;
+    background: #E9485F;
+    padding: 3px 10px;
+    font-weight: 500;
 }
 
 .b-single-product p,
@@ -2691,15 +2703,146 @@ img[align="center"] {
     margin: 15px auto;
 }
 
+.b-order-about {
+    width: 65%;
+    float: left;
+}
 
+.b-order-about_wrap {
+    margin-bottom: 30px;
+}
 
+.b-order-about tr td {
+    vertical-align: middle;
+    padding: 10px;
+    color: #286804;
+    font-weight: 500;
+}
 
+.b-order-about tr td:first-child {
+    text-align: right;
+    color: #000;
+    font-weight: 400;
+    width: 125px;
+}
 
+.b-order-about tr {
+    background: #fff;
+    font-size: 13px;
+    border-bottom: 1px solid #F7F8FC;
+}
 
+.b-order-about tr:hover {
+    background: #E7E9ED;
+}
 
+.b-order-about_right {
+    float: left;
+    width: 32.5%;
+    margin-left: 2.5%;
+    height: 156px;
+    background: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 97px;
+    font-size: 18px;
+    position: relative;
+}
 
+.b-order-about_right:before {
+    content: '';
+    display: block;
+    width: 54px;
+    height: 54px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 23px auto 0;
+    position: absolute;
+    background: url(../images/order-ok.png) no-repeat, #e9485f;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
 
+.b-order-info {
+    position: relative;
+}
 
+.b-order-info_table {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.b-order-info_table thead tr {
+    background: #2FAC32;
+    color: #fff;
+}
+
+.b-order-info_table thead td {
+    border: 1px solid #2FAC32;
+
+}
+
+.b-order-info_table td {
+    vertical-align: middle;
+    height: 53px;
+    border: 1px solid #F7F8FC;
+}
+
+.b-order-info_title span {
+    color: #286804;
+    font-size: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid;
+}
+
+.b-order-info_table tbody tr {
+    background: #fff;
+}
+
+.b-order-info_table tbody tr:hover {
+    background: #EAEBEE;
+}
+
+.b-order-info_count div {
+    width: 78px;
+    height: 32px;
+    background: #2FAC32;
+    line-height: 34px;
+    margin: auto;
+    color: #fff;
+    font-weight: 300;
+}
+
+.b-order-info_results {
+    position: absolute;
+    top: 0;
+    right: -205px;
+    line-height: 55px;
+    width: 205px;
+    text-align: center;
+    color: #fff;
+}
+
+.b-order-info_results_title {
+    height: 54px;
+    background: #2FAC32;
+    font-size: 13px;
+}
+
+.b-order-info_results_sum {
+    background: #e9485f;
+    height: 55px;
+    font-size: 18px;
+    position: relative;
+    border-top: 1px solid #F7F8FC;
+}
+
+.b-order-info_results_sum b {
+    font-weight: 500;
+}
 
 
 
@@ -2791,7 +2934,8 @@ img[align="center"] {
     }
 
     .b-cart-page,
-    .b-page {
+    .b-page,
+    .b-order {
         margin-left: -5px;
         margin-bottom: 60px;
     }
@@ -2854,6 +2998,10 @@ img[align="center"] {
         display: none;
     }
 
+    .b-promotion > .row {
+        margin: 0 0 0 -10px;
+    }
+
     .b-promotion-right {
         padding: 0;
         margin-left: 10px;
@@ -2893,6 +3041,16 @@ img[align="center"] {
     .b-products {
         float: none;
         clear: both;
+    }
+
+    .b-order-info_results {
+        top: 100%;
+        right: 0;
+    }
+
+    .b-order-info {
+        position: relative;
+        margin-bottom: 100px;
     }
 }
 
@@ -3006,6 +3164,13 @@ img[align="center"] {
 
     .logo-header {
         margin: 25px auto;
+    }
+
+    .b-order-about,
+    .b-order-about_right {
+        width: 100%;
+        clear: both;
+        margin: 20px 0 0;
     }
 }
 
