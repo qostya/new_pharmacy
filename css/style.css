@@ -933,10 +933,10 @@ input::-moz-placeholder {
     display: block;
     position: absolute;
     height: 40px;
-    width: 3px;
+    width: 22px;
     background: #fff;
     top: 0;
-    left: -1px;
+    left: -15px;
 }
 
 .b-categories-dropdown ul {
