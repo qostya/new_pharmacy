@@ -186,7 +186,7 @@ li:hover .icon__location + span {
     background: url(../images/phone-header.png) no-repeat;
 }
 
-.b-header-info_phone_icon:hover:before {
+.col-md-3:hover:hover .b-header-info_phone_icon:before {
     background: url(../images/phone-header-hover.png) no-repeat, #E9485F;
 }
 
@@ -198,8 +198,12 @@ li:hover .icon__location + span {
     background: url(../images/clocks-header.png) no-repeat;
 }
 
-.b-header-info_time_icon:hover:before {
+.col-md-3:hover:hover .b-header-info_time_icon:before {
     background: url(../images/clocks-header-hover.png) no-repeat, #E9485F;
+}
+
+.col-md-3:hover .b-header-info_phone {
+
 }
 
 .b-header-info_title {
