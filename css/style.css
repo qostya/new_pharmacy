@@ -1975,6 +1975,12 @@ input::-moz-placeholder {
     border-bottom: 2px solid transparent;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    background: transparent;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 
 .b-pagination_item.b-pagination_item__current {
