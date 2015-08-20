@@ -400,6 +400,9 @@ li:hover .icon__location + span {
     height: 86px;
     padding-top: 2px;
     background: #363636;
+    position: relative;
+    float: right;
+    width: 205px;
 }
 
 .b-cart_icon {
@@ -459,6 +462,7 @@ li:hover .icon__location + span {
     padding: 3px;
     color: #fff;
     display: none;
+    clear: both;
 }
 
 .b-cart-table td > div {
@@ -473,13 +477,11 @@ li:hover .icon__location + span {
 }
 
 .b-cart-table_title {
-    width: 75px;
 }
 
 .b-cart-table_title a {
     display: block;
     color: #fff;
-    width: 77px;
     padding: 7px 0;
     text-align: center;
     word-wrap: break-word;
@@ -3315,6 +3317,11 @@ h2.arrow-down:after {
         position: absolute;
         height: 100px;
         margin-right: -102px;
+    }
+
+    .b-cart_bottom {
+        margin-left: 20%;
+        margin-right: -20%;
     }
 
     .b-categories .navbar-header {
