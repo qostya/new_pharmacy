@@ -2120,6 +2120,7 @@ table tr:hover .b-single-product_location-price {
 .b-single-product-right {
     color: #fff;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .b-single-product-right_actions a {
@@ -3084,6 +3085,10 @@ h2.arrow-down:after {
     content: '';
     width: 100%;
     display: inline-block;
+}
+
+.b-wrapper-calendar-poll {
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 1170px) {
