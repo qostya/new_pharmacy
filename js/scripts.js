@@ -180,20 +180,21 @@ $(function () {
     (function () {
         var sett;
         $('.b-categories .nav > li')
-            .hover(function (ev) {
-                var $this = $(this);
-                if (!$this.hasClass('b-categories-dropdown__active')) {
-                    clearTimeout(sett);
-                    $this.siblings('li').find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
-                    $this.find('.b-categories-dropdown').addClass('b-categories-dropdown__active');
-                }
-            }, function (ev) {
-                var $this = $(this),
-                    hideEl = function () {
-                        $this.find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
-                    };
-                sett = setTimeout(hideEl, 2000);
-            }).click(function (ev) {
+            //.hover(function (ev) {
+            //    var $this = $(this);
+            //    if (!$this.hasClass('b-categories-dropdown__active')) {
+            //        clearTimeout(sett);
+            //        $this.siblings('li').find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
+            //        $this.find('.b-categories-dropdown').addClass('b-categories-dropdown__active');
+            //    }
+            //}, function (ev) {
+            //    var $this = $(this),
+            //        hideEl = function () {
+            //            $this.find('.b-categories-dropdown').removeClass('b-categories-dropdown__active');
+            //        };
+            //    sett = setTimeout(hideEl, 2000);
+            //})
+            .click(function (ev) {
                 var $this = $(this);
                 var $this_drop = $this.children('.b-categories-dropdown');
                 if ($this_drop.length && !$(ev.target).parents('.b-categories-dropdown').length) {
@@ -202,6 +203,8 @@ $(function () {
                 }
             });
     }());
+
+
     (function () {
         var sett;
         $('.js-add-to-favorites').click(function () {
