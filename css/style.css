@@ -714,10 +714,14 @@ input::-moz-placeholder {
     transform: scale(2.75);
 }
 
-
 .b-wrapper {
     background: #F3F6EF;
     padding-bottom: 100px;
+}
+
+.b-search {
+    position: relative;
+    z-index: 3;
 }
 
 .b-text-block {
@@ -3090,6 +3094,46 @@ h2.arrow-down:after {
 .b-wrapper-calendar-poll {
     margin-top: 30px;
 }
+
+.b-breadcrumbs a,
+.b-breadcrumbs span {
+    position: relative;
+}
+
+.b-breadcrumbs_dropdown {
+    position: absolute;
+    display: none;
+    left: 0;
+    background: #fff;
+    padding: 5px 0;
+    width: 100%;
+    margin: 0;
+    border: 1px solid #B0B0B0;
+}
+
+.b-breadcrumbs_dropdown li {
+    list-style-type: none;
+    padding: 1px 15px;
+    width: 100%;
+}
+
+.b-breadcrumbs_dropdown a {
+    display: block;
+    font-size: 15px;
+}
+
+.b-breadcrumbs_dropdown_toggle:after {
+    content: '';
+    width: 0;
+    height: 0;
+    display: block;
+    border: 4px solid transparent;
+    border-top-color: #8a8a8a;
+    position: absolute;
+    right: -13px;
+    top: 9px;
+}
+
 
 @media screen and (max-width: 1170px) {
     .b-search_input {

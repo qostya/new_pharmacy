@@ -88,6 +88,21 @@ $(function () {
         }
     });
 
+    (function () {
+        var slideDownToggle = true;
+        $('.js-open-dropdown').click(function () {
+            var dropdownBlock = $(this).siblings('.js-dropdown');
+            if (slideDownToggle) {
+                dropdownBlock.slideDown('fast');
+                slideDownToggle = false;
+            } else {
+                dropdownBlock.slideUp('fast');
+                slideDownToggle = true;
+            }
+            return false;
+        });
+    }());
+
     $('.js-calendar').clndr({
         template: $('#clndr-template').html(),
         events: [
